@@ -3,74 +3,215 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Artha Business Suite — Run the whole business</title>
-  <meta name="description" content="Artha unifies POS, inventory, accounting, customers, teams, analytics, receipts and barcode labels in one business operating suite.">
-  <meta property="og:title" content="Artha Business Suite">
-  <meta property="og:description" content="Run the whole business. See what moves it.">
-  <meta property="og:image" content="https://techhorizonadmin.github.io/artha-official/assets/og.png">
+  <meta name="description" content="Artha Business Suite is a multi-industry business operating platform for POS, inventory, finance, GST preparation, CRM, teams, commerce and storefront operations.">
   <meta name="theme-color" content="#071426">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Artha Business Suite — Business clarity, from counter to command">
+  <meta property="og:description" content="A connected multi-industry operating platform for sales, stock, finance, customers and commerce.">
+  <meta property="og:image" content="assets/og.png">
+  <title>Artha Business Suite — Business clarity, from counter to command</title>
   <link rel="icon" href="assets/artha-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="release.css">
 </head>
 <body>
-  <header class="nav wrap">
-    <a class="brand" href="#top"><img src="assets/artha-icon.png" alt="">ARTHA</a>
-    <nav><a href="#platform">Platform</a><a href="#demos">Real demos</a><a href="#downloads">Downloads</a><a href="#company">Company</a></nav>
-    <a class="button small" href="#downloads">Get Artha</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Artha Business Suite home"><img src="assets/artha-icon.png" alt="">ARTHA</a>
+      <nav aria-label="Primary navigation">
+        <a href="#platform">Platform</a>
+        <a href="#operating-model">Business model</a>
+        <a href="#commerce">Commerce</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#demos">Video library</a>
+        <a href="#releases">Releases</a>
+      </nav>
+      <a class="button button-small" href="platform.html">Platform overview</a>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero wrap">
-      <div class="eyebrow"><span></span>Business operating system · Version 1.0.7</div>
-      <h1>Run the whole business.<br><em>See what moves it.</em></h1>
-      <p class="lede">Artha connects the counter, stockroom, books, customers, teams and growth engine in one cross-platform suite. During onboarding it automatically adapts terminology, POS workflow, dashboards, catalog structure and specialist tools to the selected business.</p>
-      <div class="actions"><a class="button" href="#demos">Watch real product demos</a><a class="outline" href="#downloads">Download applications</a></div>
-      <div class="platform-strip"><span>Android</span><span>Windows x64</span><span>Windows ARM64</span><span>macOS Apple silicon</span><span>Web</span><span>iPhone excluded</span></div>
-      <figure class="hero-media"><img src="assets/media/dashboard.png" alt="Real Artha command centre with synthetic demonstration data"><figcaption>Actual Artha interface · synthetic demonstration workspace</figcaption></figure>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow"><span></span>Artha Business Suite <b class="release-chip">v1.0.9 · refreshed</b></p>
+          <h1>The operating system<br><em>for ambitious businesses.</em></h1>
+          <p class="lede">Artha connects selling, stock, purchasing, finance, customers, teams and commerce into one adaptive business operating suite—designed for the work that happens between the counter and the command centre.</p>
+          <div class="actions">
+            <a class="button" href="#platform">Explore the platform</a>
+            <a class="text-link" href="#demos">Watch product tours <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Artha scope at a glance">
+            <div><strong>31</strong><span>business experiences</span></div>
+            <div><strong>4</strong><span>delivery surfaces</span></div>
+            <div><strong>8</strong><span>integration functions</span></div>
+          </div>
+        </div>
+        <figure class="hero-stage">
+          <div class="stage-orbit orbit-one"></div><div class="stage-orbit orbit-two"></div>
+          <div class="stage-window">
+            <div class="stage-bar"><span></span><span></span><span></span><b>ARTHA · COMMAND CENTRE</b><i>LIVE PRODUCT TOUR</i></div>
+            <video muted autoplay loop playsinline preload="metadata" poster="assets/media/dashboard.png" aria-label="Artha command centre product tour using synthetic demonstration data"><source src="assets/media/artha-command-centre.mp4" type="video/mp4"></video>
+            <div class="stage-annotation"><span>CONNECTED OPERATIONS</span><strong>Sell → Stock → Account → Serve → Grow</strong></div>
+          </div>
+          <figcaption>Product recording · isolated synthetic demonstration workspace</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section class="proof wrap"><p>ONE OPERATING PICTURE</p><div><span>Sell</span><b>→</b><span>Stock</span><b>→</b><span>Account</span><b>→</b><span>Serve</span><b>→</b><span>Grow</span></div></section>
+    <section class="operating-flow wrap" aria-label="Connected operating flow">
+      <p>ONE CONNECTED OPERATING FLOW</p>
+      <div><span>Sell</span><b>→</b><span>Stock</span><b>→</b><span>Purchase</span><b>→</b><span>Account</span><b>→</b><span>Serve</span><b>→</b><span>Grow</span></div>
+    </section>
+
+    <section class="proof-section wrap" aria-label="Artha product evidence">
+      <div class="proof-heading"><p class="kicker">A visible product foundation</p><h2>Depth you can inspect.<br>Scope you can understand.</h2><p>The current Artha source and release record show a substantial, multi-surface operating platform—while keeping live-provider, hardware and statutory gates honest.</p></div>
+      <div class="proof-grid proof-grid-six">
+        <article><strong>207</strong><span>TypeScript and TSX product files</span></article>
+        <article><strong>93</strong><span>versioned database migrations</span></article>
+        <article><strong>100</strong><span>business application routes</span></article>
+        <article><strong>31</strong><span>configured business experiences</span></article>
+        <article><strong>8</strong><span>Edge Function integration entries</span></article>
+        <article><strong>6</strong><span>product recordings in the video library</span></article>
+      </div>
+    </section>
 
     <section class="section wrap" id="platform">
-      <div class="heading"><div><p class="kicker">The complete platform</p><h2>Less software.<br>More command.</h2></div><p>Artha follows the complete operating day. Every module is part of one working product rather than a disconnected catalogue.</p></div>
-      <div class="modules">
-        <article><b>01</b><h3>Adaptive Commerce</h3><p>Retail billing, restaurant tables and KOT, service appointments, memberships, ecommerce, returns and printable receipts—all selected automatically from onboarding.</p></article>
-        <article><b>02</b><h3>Inventory</h3><p>Products, variants, transfers, valuation, reorder intelligence, barcode labels and loss control.</p></article>
-        <article><b>03</b><h3>Finance</h3><p>Ledgers, accounting, GST workflows, reconciliation, payables, receivables, P&amp;L and balance sheet.</p></article>
-        <article><b>04</b><h3>Customers</h3><p>CRM, customer 360, loyalty, segmentation, reviews, referrals and lifecycle marketing.</p></article>
-        <article><b>05</b><h3>People</h3><p>Roles, permissions, attendance, shifts, HR operations, commissions, tasks and audit history.</p></article>
-        <article><b>06</b><h3>Intelligence</h3><p>Command centre, daily snapshot, reports, forecasts, health scoring, automation and AI workflows.</p></article>
+      <div class="section-heading">
+        <div><p class="kicker">The Artha platform</p><h2>One operating picture.<br>Built around real work.</h2></div>
+        <p>Artha is designed as a connected product foundation: transaction and inventory activity can inform finance, customer service, reports and merchant operations without treating each module as a separate application.</p>
+      </div>
+      <div class="capability-grid">
+        <article><span>01</span><h3>POS &amp; sales</h3><p>Billing, returns, receipts, shifts, payments, barcode-oriented selling and transaction operations.</p></article>
+        <article><span>02</span><h3>Inventory</h3><p>Products, variants, suppliers, purchases, branch-aware stock foundations, movements, labels and reorder workflows.</p></article>
+        <article><span>03</span><h3>Accounting</h3><p>Ledgers, receivables, payables, cash-flow and reporting workflows with GST-preparation architecture.</p></article>
+        <article><span>04</span><h3>Customers</h3><p>CRM, loyalty, customer records, segmentation, reviews, referrals and lifecycle-oriented operations.</p></article>
+        <article><span>05</span><h3>People &amp; control</h3><p>Roles, attendance, shifts, HR operations, task flows, notifications and audit-oriented records.</p></article>
+        <article><span>06</span><h3>Insight &amp; automation</h3><p>Dashboards, reports, health signals, automation foundations and tenant-bound AI-assistance architecture.</p></article>
       </div>
     </section>
 
-    <section class="dark" id="demos">
-      <div class="wrap">
-        <div class="heading inverse"><div><p class="kicker">Verified 1.0.7 product recordings</p><h2>See Artha<br>running.</h2></div><p>Recorded during passing guided E2E tests of the actual Artha 1.0.7 production web export, using a clearly isolated synthetic demonstration workspace. No customer data is shown.</p></div>
-        <div class="videos">
-          <article><video controls preload="metadata" poster="assets/media/dashboard.png"><source src="assets/media/artha-1.0.7-command-finance.webm" type="video/webm"></video><div><span>VERIFIED DEMO 01</span><h3>Command and finance</h3><p>Dashboard, daily snapshot, accounting, GST and reporting in one guided workflow.</p></div></article>
-          <article><video controls preload="metadata" poster="assets/media/pos.png"><source src="assets/media/artha-1.0.7-sell-stock-print.webm" type="video/webm"></video><div><span>VERIFIED DEMO 02</span><h3>Sell, stock and print</h3><p>Point of sale, inventory, purchasing, returns and receipt/label printer setup.</p></div></article>
-          <article><video controls preload="metadata" poster="assets/media/customers.png"><source src="assets/media/artha-1.0.7-customers-commerce-people.webm" type="video/webm"></video><div><span>VERIFIED DEMO 03</span><h3>Customers, commerce and people</h3><p>CRM, customer 360, ecommerce administration, storefront operations and HR.</p></div></article>
+    <section class="split-section" id="experiences">
+      <div class="wrap split-grid">
+        <div class="feature-image"><img src="assets/media/pos.png" alt="Artha point of sale interface with synthetic data"></div>
+        <div class="feature-copy">
+          <p class="kicker">Business-type experience engine</p>
+          <h2>Not one generic screen for every business.</h2>
+          <p>Artha’s configurable Business Type Engine shapes terminology, navigation, KPIs, quick actions, forms, workflows, reports, onboarding and commerce modes around the selected business experience.</p>
+          <ul class="check-list">
+            <li><strong>31 configured industry definitions</strong><span>Built on reusable retail, fashion, food-service, wholesale, service, appointment, serialized, batch and production archetypes.</span></li>
+            <li><strong>Shared operating foundation</strong><span>Security, staff, accounting, transaction and tenant controls remain shared while the experience adapts.</span></li>
+            <li><strong>Focused vertical direction</strong><span>Retail, boutique/fashion, restaurant, service and wholesale patterns are represented in the certified product source.</span></li>
+          </ul>
         </div>
-        <p class="disclosure">Recorded 28 July 2026 · Product version 1.0.7 · 3/3 guided tests passed · Figures and identities are synthetic demonstration data.</p>
       </div>
     </section>
 
-    <section class="section wrap" id="downloads">
-      <div class="heading"><div><p class="kicker">Verified application packages</p><h2>Download Artha.</h2></div><p>Evaluation builds are provided directly from the official release. Review the signing notice before public or store distribution.</p></div>
-      <div class="downloads">
-        <a href="https://github.com/TechHorizonAdmin/artha-official/releases/download/v1.0.7/Artha-Business-Suite-Android-1.0.7.apk"><span>ANDROID · OWNER-SIGNED</span><h3>APK installer</h3><p>Android 7.0+ · live backend verified · release signature verified</p><b>Download APK ↓</b></a>
-        <a href="https://github.com/TechHorizonAdmin/artha-official/releases/download/v1.0.7/Artha-Business-Suite-Android-1.0.7.aab"><span>GOOGLE PLAY · OWNER-SIGNED</span><h3>Android App Bundle</h3><p>Android App Bundle · same owner-controlled release identity</p><b>Download AAB ↓</b></a>
-        <a href="https://github.com/TechHorizonAdmin/artha-official/releases/download/v1.0.7/Artha-Business-Suite-Windows-x64-1.0.7.exe"><span>WINDOWS · X64</span><h3>Windows x64</h3><p>Intel/AMD 64-bit · live backend verified · publisher certificate pending</p><b>Download EXE ↓</b></a>
-        <a href="https://github.com/TechHorizonAdmin/artha-official/releases/download/v1.0.7/Artha-Business-Suite-Windows-ARM64-1.0.7.exe"><span>WINDOWS · ARM64</span><h3>Windows ARM64</h3><p>Native ARM64 · live backend verified · publisher certificate pending</p><b>Download EXE ↓</b></a>
-        <a href="https://github.com/TechHorizonAdmin/artha-official/releases/download/v1.0.7/Artha-Business-Suite-macOS-Apple-Silicon-1.0.7.zip"><span>MACOS · APPLE SILICON</span><h3>Apple silicon</h3><p>Strict integrity verified · ad-hoc signed · Apple notarization pending</p><b>Download ZIP ↓</b></a>
-        <a href="https://github.com/TechHorizonAdmin/artha-official/releases/download/v1.0.7/Artha-Web-1.0.7.zip"><span>WEB · PRODUCTION EXPORT</span><h3>Production export</h3><p>Live backend verified · current adaptive-business UI</p><b>Download ZIP ↓</b></a>
+    <section class="business-model-section" id="operating-model">
+      <div class="wrap business-model-grid">
+        <div class="business-model-copy">
+          <p class="kicker">Multi-business &amp; branch control</p>
+          <h2>Clear ownership.<br>Precise location control.</h2>
+          <p>One person can operate more than one business in Artha without blending their commercial records. Within a business, branches can share the catalogue while each physical location is governed through its own stock context.</p>
+          <p class="model-note">Business type changes the experience for that business. It does not create a second business or merge data across businesses.</p>
+        </div>
+        <div class="tenancy-panel" aria-label="Business and branch operating model">
+          <article class="model-anchor"><span>01</span><div><b>Business identity</b><p>Separate businesses maintain separate products, customers, financial records, memberships and working context.</p></div></article>
+          <article><span>02</span><div><b>Business type</b><p>Terminology, flows and industry guidance adapt without turning an existing business into a different tenant.</p></div></article>
+          <article><span>03</span><div><b>Branch operations</b><p>Branches provide physical-location control with a main-branch rule, stock-transfer workflow and protected retirement checks.</p></div></article>
+        </div>
       </div>
-      <div class="notice"><strong>Release notice</strong><p>Android 1.0.7 is signed with Artha’s owner-controlled release certificate and its package signature has been verified. Windows packages are architecture-verified but still require a recognized publisher certificate to avoid SmartScreen warnings. The macOS package passes strict code-integrity verification but is ad-hoc signed and not Apple-notarized; a paid Apple Developer identity is required for warning-free public distribution. iPhone/iPad is intentionally excluded.</p></div>
     </section>
 
-    <section class="company" id="company"><div class="wrap company-grid"><div><p class="kicker">Launch or acquire</p><h2>One complete product.<br>Two credible paths.</h2></div><div><p>Launch Artha as a focused business-software company or acquire a broad, documented cross-platform product foundation.</p><ul><li>Canonical source and clean transfer package</li><li>Android, Windows, macOS and web builds</li><li>Receipt and barcode-label printing</li><li>Launch memorandum and acquisition data room</li><li>Release evidence and SHA-256 checksums</li></ul></div></div></section>
+    <section class="section wrap" id="commerce">
+      <div class="section-heading narrow">
+        <div><p class="kicker">Merchant commerce</p><h2>From merchant operations<br>to a customer storefront.</h2></div>
+        <p>The commerce architecture connects merchant configuration, catalogue visibility, customer cart, server-authoritative checkout, order tracking and fulfilment-oriented lifecycle controls.</p>
+      </div>
+      <div class="commerce-grid">
+        <article><b>Merchant workspace</b><p>Manage storefront identity, publishing, public product selection and order operations from the authenticated application.</p></article>
+        <article><b>Customer journey</b><p>Public catalogue, mobile-first storefront, cart, checkout and order tracking are separate from the merchant’s private operating surface.</p></article>
+        <article><b>Protected transaction model</b><p>Checkout is designed to re-read price and tax, apply idempotency and reserve the shared product or variant stock model.</p></article>
+        <article><b>Provider-ready payments</b><p>Payment integration boundaries use server-side configuration. Live provider activation and reconciliation acceptance remain separate gates.</p></article>
+      </div>
+    </section>
+
+    <section class="dark-section" id="architecture">
+      <div class="wrap architecture-grid">
+        <div><p class="kicker">Trust by design</p><h2>Architecture that a serious operator can inspect.</h2></div>
+        <div class="architecture-list">
+          <article><span>Tenant-aware</span><p>Business, branch and role context is represented in application and data-access controls. Full live multi-business acceptance remains a documented release gate.</p></article>
+          <article><span>Server boundaries</span><p>Supabase Postgres, RLS, RPCs and Edge Functions form the protected data and integration boundary for commerce, payments, GST-provider and AI paths.</p></article>
+          <article><span>Cross-platform path</span><p>React Native/Expo Router powers the application surface; web export and Electron desktop delivery are retained alongside Android project source.</p></article>
+          <article><span>Evidence-led release</span><p>Source, checks, release manifests and known external gates are documented rather than hidden behind a blanket production claim.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence-workbench wrap">
+      <div class="section-heading narrow">
+        <div><p class="kicker">Workflow evidence</p><h2>Trace the work.<br>Not just the screens.</h2></div>
+        <p>These captured product states use isolated synthetic demonstration data and show how selected workflows connect across sales, inventory, purchasing, returns and storefront operations.</p>
+      </div>
+      <div class="evidence-wall">
+        <figure class="evidence-feature"><img src="assets/evidence/dashboard-after-real-sale.png" alt="Artha dashboard state after a synthetic sale"><figcaption><span>01</span><b>Dashboard after a sale</b><p>Transaction activity reflected in the operating view.</p></figcaption></figure>
+        <figure><img src="assets/evidence/inventory-after-real-sale.png" alt="Artha inventory state after a synthetic sale"><figcaption><span>02</span><b>Stock after a sale</b><p>Inventory proof in the working product view.</p></figcaption></figure>
+        <figure><img src="assets/evidence/purchase-stock-increased.png" alt="Artha product stock after a synthetic purchase"><figcaption><span>03</span><b>Purchase to stock</b><p>Receipt workflow increasing available stock.</p></figcaption></figure>
+        <figure><img src="assets/evidence/return-stock-restored.png" alt="Artha inventory state after a synthetic return"><figcaption><span>04</span><b>Return to stock</b><p>Return workflow restoring product stock.</p></figcaption></figure>
+        <figure><img src="assets/evidence/storefront-order-stock-deducted.png" alt="Artha storefront order stock deduction evidence"><figcaption><span>05</span><b>Storefront fulfilment</b><p>Order path reflecting stock deduction.</p></figcaption></figure>
+        <figure><img src="assets/evidence/receipt-formats-real-sale.png" alt="Artha receipt format examples generated from a synthetic sale"><figcaption><span>06</span><b>Receipt output</b><p>Operational print and receipt formats.</p></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section wrap" id="evidence">
+      <div class="section-heading">
+        <div><p class="kicker">Artha v1.0.9 release</p><h2>Built for real business operations.<br>Clear about its release work.</h2></div>
+        <p>Artha v1.0.9 strengthens the product through documented test, package and architecture work while keeping external-provider and platform-release activities clear.</p>
+      </div>
+      <div class="status-grid">
+        <article><span class="status-label verified">Documented</span><h3>Source &amp; product evidence</h3><p>Structured source, architecture, security, automated contract and release material supports the continued evolution of Artha.</p></article>
+        <article><span class="status-label evaluation">Evaluation</span><h3>Web &amp; desktop paths</h3><p>Web export and desktop packaging paths are part of the release workflow. Platform-specific signing and clean-device acceptance are distinct gates.</p></article>
+        <article><span class="status-label external">External gates</span><h3>Payments, GST &amp; hardware</h3><p>Provider credentials, live callbacks, official GST-provider acceptance and physical scan-back proof require external authority and evidence.</p></article>
+      </div>
+      <div class="release-note"><strong>Release disclosure</strong><p>Package availability or source features do not by themselves prove public-release certification, live payment success, official GST filing, notarization, code signing or complete end-to-end business acceptance.</p><a href="release-notes.html">Read v1.0.9 release notes →</a></div>
+    </section>
+
+    <section class="release-hub" id="releases">
+      <div class="wrap">
+        <div class="section-heading inverse"><div><p class="kicker">Controlled package library</p><h2>Artha v1.0.9,<br>built for operating review.</h2></div><p>Each current package is provided with its actual delivery status. Verify the published checksums before distribution and complete the listed platform gate before a public rollout.</p></div>
+        <div class="package-grid">
+          <article><span class="package-platform">macOS · Apple Silicon</span><h3>Desktop package</h3><p>Current Apple Silicon desktop package. Developer ID signing, notarization and clean-device acceptance remain controlled release gates.</p><a href="release-notes.html#delivery">Review delivery status <span>→</span></a></article>
+          <article><span class="package-platform">Windows · x64</span><h3>Desktop installer</h3><p>Current Windows x64 installer. Authenticode signing and clean-device runtime acceptance remain controlled release gates.</p><a href="release-notes.html#delivery">Review delivery status <span>→</span></a></article>
+          <article><span class="package-platform">Android · internal build</span><h3>Mobile package</h3><p>Self-contained Android evaluation build, debug-signed for internal installation testing. It is not a production-signed or store-distribution release.</p><a href="release-notes.html#delivery">Review delivery status <span>→</span></a></article>
+          <article><span class="package-platform">Web · static export</span><h3>Consumer web application</h3><p>Static web export with a customer storefront entry at <code>/store?slug=merchant-store</code>. Host it on HTTPS before sharing a merchant’s consumer URL.</p><a href="release-notes.html#delivery">Review delivery status <span>→</span></a></article>
+        </div>
+        <p class="release-library-note">The controlled v1.0.9 package record, checksums and platform-gate status are maintained with the release. <a href="release-notes.html#delivery">Read the delivery status</a>.</p>
+      </div>
+    </section>
+
+    <section class="demo-section" id="demos">
+      <div class="wrap">
+        <div class="section-heading inverse"><div><p class="kicker">Product tours</p><h2>See the connected<br>operating day.</h2></div><p>Recordings use isolated synthetic demonstration data. They demonstrate product areas, not commercial performance or every platform’s acceptance status.</p></div>
+        <div class="video-grid">
+          <article><video controls preload="metadata" poster="assets/media/dashboard.png"><source src="assets/media/artha-1.0.7-command-finance.webm" type="video/webm"></video><div><span>PRODUCT TOUR 01</span><h3>Command &amp; finance</h3><p>Dashboard, daily snapshot, accounting, GST preparation and reporting.</p></div></article>
+          <article><video controls preload="metadata" poster="assets/media/pos.png"><source src="assets/media/artha-1.0.7-sell-stock-print.webm" type="video/webm"></video><div><span>PRODUCT TOUR 02</span><h3>Sell, stock &amp; print</h3><p>Point of sale, inventory, purchasing, returns and label/receipt workflows.</p></div></article>
+          <article><video controls preload="metadata" poster="assets/media/customers.png"><source src="assets/media/artha-1.0.7-customers-commerce-people.webm" type="video/webm"></video><div><span>PRODUCT TOUR 03</span><h3>Customers &amp; commerce</h3><p>CRM, customer operations, merchant commerce and people workflows.</p></div></article>
+          <article><video controls preload="metadata" poster="assets/media/dashboard.png"><source src="assets/media/artha-command-centre.mp4" type="video/mp4"></video><div><span>PRODUCT TOUR 04</span><h3>Command centre</h3><p>A concise walkthrough of Artha’s operating dashboard and finance-aware business view.</p></div></article>
+          <article><video controls preload="metadata" poster="assets/media/pos.png"><source src="assets/media/artha-sell-and-stock.mp4" type="video/mp4"></video><div><span>PRODUCT TOUR 05</span><h3>Sales to stock</h3><p>See the working connection between selling, stock visibility and operational control.</p></div></article>
+          <article><video controls preload="metadata" poster="assets/media/customers.png"><source src="assets/media/artha-customer-growth.mp4" type="video/mp4"></video><div><span>PRODUCT TOUR 06</span><h3>Customer growth</h3><p>A product tour of customer context, relationship operations and commerce direction.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="artha-callout">
+      <div class="wrap artha-callout-grid"><div><p class="kicker">The Artha foundation</p><h2>One connected platform, built to grow with the business.</h2></div><div><p>Artha brings product operations, finance workflows, customer engagement, ecommerce and reporting together in a configurable platform that can evolve with every business it serves.</p><a class="button button-dark" href="platform.html">Explore the platform</a></div></div>
+    </section>
   </main>
 
-  <footer class="wrap"><div class="brand"><img src="assets/artha-icon.png" alt="">ARTHA</div><p>Business clarity, from counter to command.</p><small>© 2026 Artha Business Suite · Actual availability depends on configured services and market requirements. <a href="privacy.html">Privacy</a> · <a href="release-notes.html">Release notes</a></small></footer>
+  <footer class="site-footer">
+    <div class="wrap footer-grid"><div><a class="brand brand-light" href="#top"><img src="assets/artha-icon.png" alt="">ARTHA</a><p>Business clarity, from counter to command.</p></div><div><p class="footer-title">Release &amp; disclosures</p><a href="release-notes.html">v1.0.9 release notes</a><a href="platform.html">Platform overview</a><a href="privacy.html">Privacy notice</a><a href="disclosures.html">Product disclosures</a></div><div><p class="footer-title">Artha</p><p>Built for connected commerce, operations, customer growth and business clarity.</p></div></div>
+    <div class="wrap footer-bottom">© 2026 Artha Business Suite. Product demonstrations use synthetic data.</div>
+  </footer>
 </body>
 </html>

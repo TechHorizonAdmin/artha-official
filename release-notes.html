@@ -1,1 +1,36 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Release notes — Artha 1.0.7</title><link rel="stylesheet" href="styles.css"></head><body><header class="nav wrap"><a class="brand" href="index.html"><img src="assets/artha-icon.png" alt="">ARTHA</a><a class="outline" href="index.html#downloads">Downloads</a></header><main class="legal wrap"><p class="kicker">Verified release</p><h1>Artha 1.0.7</h1><p>Release date: 28 July 2026. Supported packages: Android APK and AAB, Windows x64, Windows ARM64, macOS Apple silicon and web. iPhone/iPad is intentionally excluded.</p><h2>Highlights</h2><ul><li>Owner-signed Android production packages with verified v2 APK signature.</li><li>System receipt printing with thermal, A4 and compact formats.</li><li>Inventory barcode-label printing across nine standard label sizes, with Code 39, copy quantities and pricing fields.</li><li>Responsive interface certification across phone, tablet and desktop viewports.</li><li>Cross-platform suite spanning commerce, inventory, finance, CRM, people, operations and intelligence.</li><li>Security, backend configuration and release integrity validation.</li></ul><h2>Signing status</h2><p>Android packages use Artha’s owner-controlled release identity. Windows packages still require a recognized publisher certificate for SmartScreen reputation. The macOS package is ad-hoc signed and passes strict integrity verification, but Apple Developer ID signing and notarization are still required for warning-free public installation.</p><h2>Integrity</h2><p>SHA-256 checksums are published with the release assets and retained in the corporate release-evidence folder.</p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Artha Business Suite v1.0.9 release notes.">
+  <title>Release notes — Artha v1.0.9</title>
+  <link rel="icon" href="assets/artha-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="index.html"><img src="assets/artha-icon.png" alt="">ARTHA</a><a class="button button-small" href="platform.html">Platform overview</a></div></header>
+  <main class="legal-page wrap">
+    <p class="kicker">Current release</p>
+    <h1>Artha v1.0.9</h1>
+    <p class="lede">Version 1.0.9 strengthens the Artha product foundation while preserving the historical v1.0.8 baseline. It documents what was built and verified without representing every external service as active.</p>
+    <h2>Release focus</h2>
+    <ul>
+      <li>Aligned application, desktop and Expo metadata to v1.0.9.</li>
+      <li>Improved POS barcode/SKU behaviour so an exact scan adds the matching product directly to the active sale.</li>
+      <li>Applied and verified linked production migrations for business context, branch inventory and local accounting-date foundations.</li>
+      <li>Added a protected branch lifecycle: an active main branch is required, non-main branches may be safely retired only after stock is cleared, and direct deletion is blocked to preserve history.</li>
+      <li>Clarified that a business-type change configures the current business; a separate business uses its own tenant context and isolated operating records.</li>
+      <li>Added a customer-facing, static-host-compatible storefront at <code>/store?slug=merchant-store</code> plus a merchant no-code builder for published copy, section visibility and shareable HTTPS store addresses.</li>
+      <li>Refreshed the public Artha website with product recordings, workflow evidence and current verified source inventory.</li>
+    </ul>
+    <h2>Verification posture</h2>
+    <p>The release process includes type and formatting checks, tenant/RPC and database-contract checks, commerce, payment, GST-provider, AI, export, printing and desktop-security contract checks, plus export/package workflows where the build host supports them. The static consumer route was opened from a plain local server; the live database audit confirms the main-branch invariant and reports no cross-business branch-stock records.</p>
+    <h2 id="delivery">Current package delivery</h2>
+    <div class="legal-notice">The current macOS, Windows, Android and web packages are retained in Artha’s controlled release library with checksums and platform-gate records. Public GitHub release assets must be uploaded before a public download is offered. An HTTPS host and public store base address must be configured before sharing a merchant link. Provider credentials and callbacks, GST-provider authorization, hardware scan-back, platform signing/notarization, clean-device/platform runtime acceptance, Android/iOS signing and any required hosting/privacy/legal review are controlled release activities. No live payment or official GST filing claim is made by this page.</div>
+    <h2>Historical baseline</h2>
+    <p>Artha v1.0.8 remains a preserved historical certified baseline. v1.0.9 is a separate release branch with its own product, release and company documentation.</p>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-bottom">© 2026 Artha Business Suite · <a href="index.html">Product overview</a> · <a href="privacy.html">Privacy</a> · <a href="disclosures.html">Disclosures</a></div></footer>
+</body>
+</html>

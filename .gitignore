@@ -1,0 +1,10 @@
+
+# Controlled Artha release binaries belong in the company release library,
+# not in the GitHub Pages source repository.
+downloads/*.exe
+downloads/*.apk
+downloads/*.aab
+downloads/*.dmg
+downloads/*.zip
+downloads/*.msi
+downloads/*.pkg

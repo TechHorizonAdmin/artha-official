@@ -2,12 +2,48 @@
 .release-chip{display:inline-flex;align-items:center;border:1px solid #c8a849;border-radius:99px;padding:4px 7px;color:#5e4705;background:#fff8df;font-size:8px;letter-spacing:1px}.hero{overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:42vw;height:42vw;right:-18vw;bottom:-31vw;border:1px solid #d2b65d55;border-radius:50%;pointer-events:none}.hero-grid{position:relative;z-index:1}.hero-proof{display:flex;gap:18px;padding-top:8px}.hero-proof>div{display:flex;align-items:baseline;gap:7px}.hero-proof strong{font-size:1.35rem;color:#8c6b10;letter-spacing:-.06em}.hero-proof span{font-size:9px;line-height:1.25;max-width:63px;text-transform:uppercase;letter-spacing:.55px;font-weight:800;color:#5d6878}.hero-stage{position:relative;margin:0;padding:20px 16px 0}.stage-orbit{position:absolute;inset:auto;border-radius:50%;pointer-events:none}.orbit-one{width:90%;aspect-ratio:1;left:0;top:1%;border:1px solid #b2902f66}.orbit-two{width:55%;aspect-ratio:1;right:-5%;bottom:-6%;border:1px dashed #bd9a3e77}.stage-window{overflow:hidden;position:relative;border:1px solid #8693a4;background:#071426;box-shadow:0 35px 70px #07142642;transform:perspective(1100px) rotateY(-3deg) rotateX(1deg)}.stage-window video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#0b1322}.stage-bar{display:flex;align-items:center;gap:5px;height:35px;padding:0 12px;background:#0e213d;color:#bdcad9;font:700 8px Inter,Arial,sans-serif;letter-spacing:1px}.stage-bar span{width:7px;height:7px;border-radius:50%;background:#d6b554}.stage-bar span:nth-child(2){background:#75c9a7}.stage-bar span:nth-child(3){background:#70a7e8}.stage-bar b{margin-left:7px;font:800 8px Inter,Arial,sans-serif}.stage-bar i{margin-left:auto;color:#d6b554;font-style:normal;font-size:7px}.stage-annotation{position:absolute;right:12px;bottom:12px;max-width:215px;padding:10px 12px;background:#071426e6;border-left:2px solid #d6b554;color:#fff}.stage-annotation span{display:block;margin-bottom:3px;color:#e4c96f;font:800 7px Inter,Arial,sans-serif;letter-spacing:1.2px}.stage-annotation strong{font:700 10px/1.35 Inter,Arial,sans-serif}.hero-stage figcaption{padding:11px 2px 0;color:#596679;font-size:9px;letter-spacing:.6px;text-transform:uppercase}.proof-grid-six{grid-template-columns:repeat(6,1fr)}.proof-grid-six article{min-height:135px}.business-model-section{padding:108px 0;background:linear-gradient(135deg,#eee4d2,#f8f4ec 55%,#e6eef7)}.business-model-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:84px;align-items:center}.business-model-copy h2{margin:13px 0 20px;color:#071426;font-size:clamp(42px,4.8vw,64px);line-height:1.03;letter-spacing:-2.3px}.business-model-copy>p:not(.kicker){margin:0;color:#536076;font-size:15px;line-height:1.85}.business-model-copy .model-note{margin-top:20px;padding:15px 18px;border-left:3px solid #b18d28;background:#fffaf0;color:#4e4a3d;font-size:13px;line-height:1.7}.tenancy-panel{border:1px solid #d4c9b7;background:#fffdf8;box-shadow:0 22px 50px #24334b14}.tenancy-panel article{display:grid;grid-template-columns:54px 1fr;gap:16px;padding:25px;border-bottom:1px solid #e5ded2}.tenancy-panel article:last-child{border-bottom:0}.tenancy-panel article span{display:flex;align-items:flex-start;justify-content:center;padding-top:1px;color:#96731d;font:400 28px Georgia,serif}.tenancy-panel b{display:block;color:#132039;font:400 25px Georgia,serif}.tenancy-panel p{margin:8px 0 0;color:#637087;font-size:13px;line-height:1.7}.tenancy-panel .model-anchor{background:#0d1d35}.tenancy-panel .model-anchor span,.tenancy-panel .model-anchor b{color:#f0df9e}.tenancy-panel .model-anchor p{color:#c8d2df}.evidence-workbench{padding:108px 0}.evidence-wall{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.evidence-wall figure{margin:0;overflow:hidden;border:1px solid #d9d2c6;background:#fffdf8}.evidence-wall img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .35s ease}.evidence-wall figure:hover img{transform:scale(1.025)}.evidence-wall figcaption{padding:16px 17px 18px}.evidence-wall figcaption span{display:inline-block;margin-bottom:8px;color:#97731b;font-size:9px;font-weight:900;letter-spacing:1.3px}.evidence-wall figcaption b{display:block;color:#132039;font:400 23px Georgia,serif}.evidence-wall figcaption p{margin:5px 0 0;color:#637087;font-size:12px;line-height:1.55}.evidence-wall .evidence-feature{grid-row:span 2}.evidence-wall .evidence-feature img{aspect-ratio:4/3}.dark-section .kicker{color:#e3c66c}@media(max-width:960px){.proof-grid-six{grid-template-columns:repeat(3,1fr)}.business-model-grid{grid-template-columns:1fr;gap:36px}.evidence-wall{grid-template-columns:repeat(2,1fr)}.evidence-wall .evidence-feature{grid-row:auto}}@media(max-width:680px){.hero-proof{gap:12px}.hero-stage{padding:16px 0 0}.stage-bar b{display:none}.stage-annotation{right:8px;bottom:8px}.proof-grid-six{grid-template-columns:repeat(2,1fr)}.business-model-section,.evidence-workbench{padding:72px 0}.evidence-wall{grid-template-columns:1fr}.evidence-wall .evidence-feature img{aspect-ratio:16/10}}@media(prefers-reduced-motion:reduce){.evidence-wall img{transition:none}.stage-window{transform:none}}
 
 /* ==========================================================================
-   ARTHA v1.0.9 — FINAL PUBLIC WEBSITE POLISH
+   ARTHA — CURRENT-SOURCE PUBLIC WEBSITE POLISH
    Executive visual hierarchy + responsive proof metrics
    ========================================================================== */
 
 .hero {
   overflow: hidden;
+}
+
+/* Current-source package promotion states. */
+.package-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.package-grid article > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.package-status {
+  margin-top: auto;
+  padding-top: 22px;
+  color: #efc764;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.package-status-ready {
+  color: #7bd6ad;
+}
+
+@media (max-width: 1100px) {
+  .package-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero-grid {

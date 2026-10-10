@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Artha Business Suite v1.0.9 unsigned evaluation release notes and validation evidence.">
-  <title>Unsigned evaluation release — Artha Business Suite</title>
+  <meta name="description" content="Artha Business Suite v1.0.9 package revision r2 release notes and validation evidence.">
+  <title>v1.0.9 r2 release — Artha Business Suite</title>
   <link rel="icon" href="assets/artha-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header"><div class="wrap nav"><a class="brand" href="index.html"><img src="assets/artha-icon.png" alt="">ARTHA</a><a class="button button-small" href="platform.html">Platform overview</a></div></header>
   <main class="legal-page wrap">
-    <p class="kicker">v1.0.9 unsigned evaluation release</p>
-    <h1>Artha, end-to-end evaluation build</h1>
-    <p class="lede">The current build brings Artha’s connected core and known advertised vertical engines into one package line. Source, contract, quality, web export, 109-migration staging replay, tenant isolation, retail lifecycle and specialised-engine smoke checks pass.</p>
+    <p class="kicker">v1.0.9 · package revision r2 · 10 October 2026</p>
+    <h1>Corrected, audited cross-platform packages</h1>
+    <p class="lede">Revision r2 repairs the missing production client configuration discovered in the earlier macOS, Windows, Linux and web artifacts. The corrected export now fails the build if its public Supabase configuration is missing, and the release audit opens each supported package payload to verify the expected backend host before publication.</p>
+    <h2>What changed in r2</h2>
+    <ul>
+      <li>Added mandatory pre-build validation for the public backend URL and anonymous client key, including protection against placeholders and privileged keys.</li>
+      <li>Added post-export and post-package audits for the web export, macOS ZIP, Windows ZIP and Linux deb; the Android APK retains its dedicated embedded-host audit.</li>
+      <li>Rebuilt macOS, Windows, Linux AppImage, Linux deb and web packages from one corrected production export.</li>
+      <li>Launched the repaired macOS package and verified authenticated live, read-only flows across dashboard, POS, inventory, customers, purchases, returns, GST, accounting, reports, storefront and the Business Type Engine.</li>
+      <li>Kept the earlier v1.0.9 package set preserved as a superseded historical record instead of silently overwriting it.</li>
+    </ul>
     <h2>Release focus</h2>
     <ul>
       <li>Preserves the multi-business, branch, role, inventory, accounting, GST-preparation, CRM, staff, reporting, automation, merchant-commerce and customer-storefront foundations.</li>
@@ -28,7 +36,7 @@
     <h2 id="delivery">Package status</h2>
     <div class="legal-notice">The published download set contains an ad-hoc-signed macOS ZIP, unsigned Windows portable ZIP, Linux AppImage and deb, internal/debug-signed Android arm64 APK, and static web export. Commercial publisher signing, Apple notarization, Windows installer signing, Android production signing/AAB, physical printer/scanner testing, provider credentials and statutory authorization remain external gates.</div>
     <h2>Version and checksums</h2>
-    <p>This organized unsigned evaluation line uses version 1.0.9. Every distributed file is listed in the release SHA-256 checksum manifest and the <a href="https://github.com/TechHorizonAdmin/artha-official/releases/tag/v1.0.9-unsigned-final">official GitHub Release</a>. Artha v1.0.8 remains a preserved historical baseline.</p>
+    <p>The application version remains 1.0.9; <strong>r2</strong> is the corrected package revision. Every current file is listed in the SHA-256 manifest and the <a href="https://github.com/TechHorizonAdmin/artha-official/releases/tag/v1.0.9-unsigned-r2">official r2 GitHub Release</a>. The original v1.0.9 package line and v1.0.8 baseline remain historical records.</p>
   </main>
   <footer class="site-footer"><div class="wrap footer-bottom">© 2026 Artha Business Suite · <a href="index.html">Product overview</a> · <a href="privacy.html">Privacy</a> · <a href="disclosures.html">Disclosures</a></div></footer>
 </body>

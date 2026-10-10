@@ -10,12 +10,13 @@ Revision r2 supersedes the 6 October package set. The application version remain
 | --- | --- | --- | --- |
 | macOS Apple Silicon | `mac/Artha-Business-Suite-macOS-Apple-Silicon-1.0.9.zip` | `ebac727a9337204208b835394abafa08ac3a0b1fb1dbb87b53c9ac0face627b5` | Ad-hoc signature and archive integrity pass; embedded production host pass; packaged app launched and read-only live modules tested |
 | Windows x64 | `windows/Artha-Business-Suite-Windows-portable-1.0.9-x64.zip` | `0c26dbc2e8341b07d4b4beed61cabf8d7b70f246d922b67309aec56cd0ebc2c6` | Portable archive integrity and embedded production host pass |
+| Windows x64 installer | `windows/Artha-Business-Suite-Windows-Setup-1.0.9-x64.exe` | `ea8234f14041c13b2a67c3bdfbf26caf7dc578406a12c92c8d0a07f1c4e57d7c` | NSIS installer built from the same audited Windows application payload; unsigned |
 | Linux x64 | `linux/Artha-Business-Suite-Linux-1.0.9-x86_64.AppImage` | `d7fac697a799b26ae7f769fc8767ad2162849e44ef7fda2d37f3acbf097b8704` | Built from the same verified Linux payload as the deb; executable format pass |
 | Debian/Ubuntu amd64 | `linux/Artha-Business-Suite-Linux-1.0.9-amd64.deb` | `4cacd7610f85e8492e2cc1f040210a9e89a572e6b2d80bd1e3837b09fe8d8ad3` | Debian structure and embedded production host pass |
 | Android arm64 | `android/Artha-Business-Suite-Android-internal-1.0.9-arm64.apk` | `fb38b2d64cde49d7c48ff125415fa72ab7f17cf87923145cb285be42565a8017` | Self-contained internal/debug-signed APK; embedded production host pass |
 | Web | `web/Artha-Web-Application-unsigned-1.0.9.zip` | `e43f02ac065f547cbac110ae822727d73bbfaf3f787175ab0b72060d04748abd` | Static merchant and storefront export; embedded production host pass |
 
-`SHA256SUMS.txt` is the machine-readable checksum source for these six downloadable application artifacts.
+`SHA256SUMS.txt` is the machine-readable checksum source for these seven downloadable application artifacts.
 
 ## r2 repair
 

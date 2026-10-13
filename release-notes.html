@@ -3,24 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Artha Business Suite v1.0.9 package revision r2 release notes and validation evidence.">
-  <title>v1.0.9 r2 release — Artha Business Suite</title>
+  <meta name="description" content="Artha Business Suite v1.0.9 package revision r4 release notes and validation evidence.">
+  <title>v1.0.9 r4 release — Artha Business Suite</title>
   <link rel="icon" href="assets/artha-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header"><div class="wrap nav"><a class="brand" href="index.html"><img src="assets/artha-icon.png" alt="">ARTHA</a><a class="button button-small" href="platform.html">Platform overview</a></div></header>
   <main class="legal-page wrap">
-    <p class="kicker">v1.0.9 · package revision r2 · 10 October 2026</p>
-    <h1>Corrected, audited cross-platform packages</h1>
-    <p class="lede">Revision r2 repairs the missing production client configuration discovered in the earlier macOS, Windows, Linux and web artifacts. The corrected export now fails the build if its public Supabase configuration is missing, and the release audit opens each supported package payload to verify the expected backend host before publication.</p>
-    <h2>What changed in r2</h2>
+    <p class="kicker">v1.0.9 · package revision r4 · 13 October 2026</p>
+    <h1>Business-engine verified, startup-repaired packages</h1>
+    <p class="lede">Revision r4 verifies the complete 31-business-type matrix against 29 resolved data models and 10 operating archetypes, adds the 111th consistency migration, repairs the macOS desktop startup path and rebuilds every target from a production-only export.</p>
+    <h2>What changed in r4</h2>
     <ul>
-      <li>Added mandatory pre-build validation for the public backend URL and anonymous client key, including protection against placeholders and privileged keys.</li>
-      <li>Added post-export and post-package audits for the web export, macOS ZIP, Windows ZIP and Linux deb; the Android APK retains its dedicated embedded-host audit.</li>
-      <li>Rebuilt macOS, Windows, Linux AppImage, Linux deb and web packages from one corrected production export.</li>
-      <li>Launched the repaired macOS package and verified authenticated live, read-only flows across dashboard, POS, inventory, customers, purchases, returns, GST, accounting, reports, storefront and the Business Type Engine.</li>
-      <li>Kept the earlier v1.0.9 package set preserved as a superseded historical record instead of silently overwriting it.</li>
+      <li>Runs each of the 31 configured business types through live staging setup and checks its exact inventory, CRM and point-of-sale terminology.</li>
+      <li>Verifies 29 registered data models across 10 operating archetypes, with no extended business type silently falling back to the generic Retail model.</li>
+      <li>Adds a database consistency repair for business industry profiles and validates 111 migrations, 140 public tables, 140 RLS-enabled tables and 193 policies.</li>
+      <li>Repairs desktop startup by selecting an available local port, waiting for the embedded application server and retaining diagnostic logs instead of opening a blank window.</li>
+      <li>Preserves production/staging cache isolation and the purchase paid/due consistency controls introduced in r3.</li>
+      <li>Rebuilds macOS, Windows installer and portable ZIP, Linux AppImage and deb, Android arm64 APK, and the merchant/storefront web export from the same verified source.</li>
+      <li>Preserves r2 and r3 as superseded evidence rather than overwriting their files or checksums.</li>
     </ul>
     <h2>Release focus</h2>
     <ul>
@@ -32,11 +34,11 @@
       <li>Builds the merchant and customer storefront web export locally at 3,694 modules.</li>
     </ul>
     <h2>Verification posture</h2>
-    <p>The release passes TypeScript, quality, migration-safety and vertical contract checks plus database, tenant, commerce, B2B, payment, GST, automation, reporting/export, printing and desktop-security regressions. The dedicated staging database replays all 109 migrations, keeps every public table under RLS, has no missing policy-backed grants and passes rollback-safe tenant, retail and engine-smoke journeys.</p>
+    <p>The release passes TypeScript, quality, industry-registry, purchase-consistency, migration-safety and vertical contract checks plus database, tenant, commerce, B2B, payment, GST, automation, reporting/export, printing and desktop-security regressions. The dedicated staging database replays all 111 migrations, keeps all 140 public tables under RLS, has no missing policy-backed grants and passes rollback-safe tenant, retail and specialised-engine journeys. The live 31-business-type matrix verifies setup and exact inventory, CRM and point-of-sale terminology. A staging retail lifecycle covered sale, GST, stock, journals, supplier purchase, goods receipt, payment and return/refund evidence.</p>
     <h2 id="delivery">Package status</h2>
     <div class="legal-notice">The published download set contains an ad-hoc-signed macOS ZIP, unsigned Windows NSIS installer and portable ZIP, Linux AppImage and deb, internal/debug-signed Android arm64 APK, and static web export. Commercial publisher signing, Apple notarization, Windows Authenticode, Android production signing/AAB, physical printer/scanner testing, provider credentials and statutory authorization remain external gates.</div>
     <h2>Version and checksums</h2>
-    <p>The application version remains 1.0.9; <strong>r2</strong> is the corrected package revision. Every current file is listed in the SHA-256 manifest and the <a href="https://github.com/TechHorizonAdmin/artha-official/releases/tag/v1.0.9-unsigned-r2">official r2 GitHub Release</a>. The original v1.0.9 package line and v1.0.8 baseline remain historical records.</p>
+    <p>The application version remains 1.0.9; <strong>r4</strong> identifies this business-engine verified package revision. Every current file is listed in the SHA-256 manifest. After the final production migration and publication approvals, the package set will be published under <a href="https://github.com/TechHorizonAdmin/artha-official/releases/tag/v1.0.9-unsigned-r4">the r4 GitHub Release</a>. Revisions r2 and r3, the original v1.0.9 package line and the v1.0.8 baseline remain historical records.</p>
   </main>
   <footer class="site-footer"><div class="wrap footer-bottom">© 2026 Artha Business Suite · <a href="index.html">Product overview</a> · <a href="privacy.html">Privacy</a> · <a href="disclosures.html">Disclosures</a></div></footer>
 </body>

@@ -1,35 +1,32 @@
-# Artha Business Suite v1.0.9 — Package Revision r2
+# Artha Business Suite v1.0.9 — Package Revision r4
 
-Prepared on 10 October 2026 from the organized Artha completion workspace.
+Prepared on 13 October 2026 from the organized Artha completion workspace.
 
-Revision r2 supersedes the 6 October package set. The application version remains 1.0.9; r2 identifies the corrected cross-platform packaging revision.
+Revision r4 supersedes r3 for new evaluations. The application version remains 1.0.9; r4 identifies the business-engine verified, desktop-startup repaired cross-platform package revision.
 
-## Package set
+## Application package set
 
 | Platform | Package | SHA-256 | Verified status |
 | --- | --- | --- | --- |
-| macOS Apple Silicon | `mac/Artha-Business-Suite-macOS-Apple-Silicon-1.0.9.zip` | `ebac727a9337204208b835394abafa08ac3a0b1fb1dbb87b53c9ac0face627b5` | Ad-hoc signature and archive integrity pass; embedded production host pass; packaged app launched and read-only live modules tested |
-| Windows x64 | `windows/Artha-Business-Suite-Windows-portable-1.0.9-x64.zip` | `0c26dbc2e8341b07d4b4beed61cabf8d7b70f246d922b67309aec56cd0ebc2c6` | Portable archive integrity and embedded production host pass |
-| Windows x64 installer | `windows/Artha-Business-Suite-Windows-Setup-1.0.9-x64.exe` | `ea8234f14041c13b2a67c3bdfbf26caf7dc578406a12c92c8d0a07f1c4e57d7c` | NSIS installer built from the same audited Windows application payload; unsigned |
-| Linux x64 | `linux/Artha-Business-Suite-Linux-1.0.9-x86_64.AppImage` | `d7fac697a799b26ae7f769fc8767ad2162849e44ef7fda2d37f3acbf097b8704` | Built from the same verified Linux payload as the deb; executable format pass |
-| Debian/Ubuntu amd64 | `linux/Artha-Business-Suite-Linux-1.0.9-amd64.deb` | `4cacd7610f85e8492e2cc1f040210a9e89a572e6b2d80bd1e3837b09fe8d8ad3` | Debian structure and embedded production host pass |
-| Android arm64 | `android/Artha-Business-Suite-Android-internal-1.0.9-arm64.apk` | `fb38b2d64cde49d7c48ff125415fa72ab7f17cf87923145cb285be42565a8017` | Self-contained internal/debug-signed APK; embedded production host pass |
-| Web | `web/Artha-Web-Application-unsigned-1.0.9.zip` | `e43f02ac065f547cbac110ae822727d73bbfaf3f787175ab0b72060d04748abd` | Static merchant and storefront export; embedded production host pass |
+| macOS Apple Silicon | `Artha-Business-Suite-macOS-Apple-Silicon-1.0.9.zip` | `ca1ffe01003f8229426d7b37546ca1121656254960ff3e1106a027915fc92a4f` | Archive integrity, ad-hoc code signature and embedded production-host checks pass |
+| Windows x64 | `Artha-Business-Suite-Windows-portable-1.0.9-x64.zip` | `7660fd1c0d441b1770babda8dc0089afb4a5c4b5123c9878e558b0144f752fbf` | Portable archive integrity and embedded production-host checks pass |
+| Windows x64 installer | `Artha-Business-Suite-Windows-Setup-1.0.9-x64.exe` | `fd24ae4a25b738af98155bce7666f62fa93f57db9743c146857f93a23f716068` | NSIS installer built from the verified Windows payload; unsigned |
+| Linux x64 | `Artha-Business-Suite-Linux-1.0.9-x86_64.AppImage` | `72956dac00e8bc8d74db0d7c67841a300cfb30b199132d5617e3432a363aab3d` | ELF/AppImage structure and executable-bit checks pass |
+| Debian/Ubuntu amd64 | `Artha-Business-Suite-Linux-1.0.9-amd64.deb` | `21e4d11014c3bb1c2b555c1f8003aff1b21b302a1ab3f54db3e1fddc06e1dd8e` | Debian archive structure and embedded production-host checks pass |
+| Android arm64 | `Artha-Business-Suite-Android-internal-1.0.9-arm64.apk` | `c218d151d34228f987b8871d8ea85136fa796cfb7f81f07339a1451f06a840a1` | arm64-only internal APK; production host audited; APK v2 debug signature verified |
+| Web | `Artha-Web-Application-unsigned-1.0.9.zip` | `ff4d66beab7c6b900df56978e3e1eda944855862686313f11e186a7b7c8b5bad` | Static merchant and storefront export; production-only host pass |
 
-`SHA256SUMS.txt` is the machine-readable checksum source for these seven downloadable application artifacts.
+The GitHub Release will include the machine-readable `SHA256SUMS.txt` covering these seven application artifacts and the public website source snapshot.
 
-## r2 repair
+## r4 corrections and verification
 
-The earlier desktop and web packages did not contain Artha's required public service configuration and displayed a missing-configuration error. Revision r2 fixes the build pipeline, adds fail-closed environment checks, and audits the exported and packaged payloads before release. The earlier package set remains preserved only as a superseded historical record.
-
-## Validation evidence
-
-- TypeScript and the approved quality baseline pass.
-- All 24 module, business-engine, commerce, security, GST, payment, printing, export, automation and service contract suites pass.
-- Dedicated staging verification passes for all 109 migrations, database lint, all 139 public tables under RLS, tenant isolation, the retail sale/return lifecycle, and specialised engine smoke journeys; synthetic data was rolled back.
-- The Business Type Engine presents all 31 configured business experiences, including retail, wholesale, distribution, manufacturing, grocery, boutique, restaurant/cafe/bakery, salon/spa/gym, pharmacy/clinic/hospital, electronics, fashion, hardware, agriculture, food processing, automobile/repair, construction, professional services, education, real estate and generic service/other profiles.
-- The repaired macOS package was live-tested read-only against Artha production for sign-in/session loading, dashboard, POS, inventory, customers, purchases, returns, GST, accounting, reports, storefront status and Business Type Engine.
+- All 31 business types pass live staging setup and exact inventory, CRM and point-of-sale terminology checks.
+- The registry resolves 29 data models across 10 operating archetypes with no extended type silently falling back to the generic Retail model.
+- The staging database replays 111 migrations and verifies 140 of 140 public tables under RLS with 193 policies.
+- The macOS desktop startup path now selects an available local port, waits for the embedded server and keeps diagnostic logs.
+- Production and staging exports remain isolated; the production verifier rejects staging-host contamination.
+- macOS, Windows, Linux, Android and web targets were rebuilt after the corrections.
 
 ## External release boundaries
 
-This remains an unsigned evaluation package line. Apple Developer ID notarization, Windows Authenticode/installer signing, Android production signing/AAB, clean-device acceptance on target Windows/Linux/Android machines, provider-authorized payment and GST submission, messaging delivery, and physical printer/scanner acceptance require their respective identities, services or hardware.
+This is an unsigned evaluation package line. Apple Developer ID signing/notarization, Windows Authenticode signing, Android production keystore/AAB, clean-device acceptance on target operating systems, provider-authorized payment and GST submission, messaging delivery, physical printer/scanner acceptance and production database rollout remain separate controlled release gates.

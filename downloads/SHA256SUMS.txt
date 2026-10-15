@@ -3,6 +3,6 @@ c218d151d34228f987b8871d8ea85136fa796cfb7f81f07339a1451f06a840a1  android/Artha-
 72956dac00e8bc8d74db0d7c67841a300cfb30b199132d5617e3432a363aab3d  linux/Artha-Business-Suite-Linux-1.0.9-x86_64.AppImage
 ca1ffe01003f8229426d7b37546ca1121656254960ff3e1106a027915fc92a4f  mac/Artha-Business-Suite-macOS-Apple-Silicon-1.0.9.zip
 ff4d66beab7c6b900df56978e3e1eda944855862686313f11e186a7b7c8b5bad  web/Artha-Web-Application-unsigned-1.0.9.zip
-f47df84b2ee72bd722d7a6d72138b7b51b346c0d854e93f7b875946aeeace493  website/Artha-Public-Website-unsigned-r4-1.0.9.zip
+7457c1dc6811c1616e55b3217641c25d1c49e5d47864fa0cef7e0ca7625ead74  website/Artha-Public-Website-unsigned-r4-1.0.9.zip
 fd24ae4a25b738af98155bce7666f62fa93f57db9743c146857f93a23f716068  windows/Artha-Business-Suite-Windows-Setup-1.0.9-x64.exe
 7660fd1c0d441b1770babda8dc0089afb4a5c4b5123c9878e558b0144f752fbf  windows/Artha-Business-Suite-Windows-portable-1.0.9-x64.zip

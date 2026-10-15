@@ -1,6 +1,6 @@
 # Artha public website
 
-Static company and product website for Artha Business Suite v1.0.9 package revision r4.
+Static company and product website for the public Artha Business Suite v1.0.9 package revision r4 evaluation release.
 
 - The website presents the Artha product scope and release posture without publishing private company records.
 - `platform.html` is the public overview of the Artha platform and its connected business capabilities.

@@ -29,4 +29,4 @@ The GitHub Release will include the machine-readable `SHA256SUMS.txt` covering t
 
 ## External release boundaries
 
-This is an unsigned evaluation package line. Apple Developer ID signing/notarization, Windows Authenticode signing, Android production keystore/AAB, clean-device acceptance on target operating systems, provider-authorized payment and GST submission, messaging delivery, physical printer/scanner acceptance and production database rollout remain separate controlled release gates.
+The approved production rollout and separately approved policy-parity cleanup passed on 15 October 2026. Production and staging both have 140/140 RLS-enabled public tables, 193 policies and zero named drift policies, with no pending migration, seed or role change. This remains an unsigned evaluation package line: Apple Developer ID signing/notarization, Windows Authenticode signing, Android production keystore/AAB, clean-device acceptance on target operating systems, provider-authorized payment and GST submission, messaging delivery, and physical printer/scanner acceptance remain separate controlled release gates.

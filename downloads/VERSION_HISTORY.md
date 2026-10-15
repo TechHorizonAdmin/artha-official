@@ -1,12 +1,12 @@
 # Artha package version history
 
-## Current candidate — v1.0.9 package revision r4 (13 October 2026)
+## Current public evaluation release — v1.0.9 package revision r4 (15 October 2026)
 
 - Live-tests all 31 business types, including exact inventory, CRM and POS terminology, against 29 resolved data models and 10 operating archetypes.
 - Replays 111 staging migrations and verifies all 140 public tables under RLS.
 - Repairs the macOS desktop startup path and rebuilds macOS, Windows, Linux, Android arm64 and web packages from the verified production-only export.
 - Preserves the production/staging export-cache isolation and purchase paid/due balance controls introduced in r3.
-- Intended GitHub tag: `v1.0.9-unsigned-r4` after the production rollout and publication gates are approved.
+- Published under GitHub tag `v1.0.9-unsigned-r4` after the verified production rollout and policy-parity repair.
 
 ## Superseded candidate — v1.0.9 package revision r3 (12 October 2026)
 

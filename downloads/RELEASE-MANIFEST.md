@@ -22,7 +22,7 @@ The GitHub Release will include the machine-readable `SHA256SUMS.txt` covering t
 
 - All 31 business types pass live staging setup and exact inventory, CRM and point-of-sale terminology checks.
 - The registry resolves 29 data models across 10 operating archetypes with no extended type silently falling back to the generic Retail model.
-- The staging database replays 111 migrations and verifies 140 of 140 public tables under RLS with 193 policies.
+- The r4 package qualification replayed 111 migrations and verified 140 of 140 public tables under RLS with 193 policies. The separately approved `2026101501` policy-parity migration is the 112th canonical migration and is applied to both staging and production.
 - The macOS desktop startup path now selects an available local port, waits for the embedded server and keeps diagnostic logs.
 - Production and staging exports remain isolated; the production verifier rejects staging-host contamination.
 - macOS, Windows, Linux, Android and web targets were rebuilt after the corrections.

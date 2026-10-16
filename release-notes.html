@@ -18,7 +18,7 @@
     <ul>
       <li>Runs each of the 31 configured business types through live staging setup and checks its exact inventory, CRM and point-of-sale terminology.</li>
       <li>Verifies 29 registered data models across 10 operating archetypes, with no extended business type silently falling back to the generic Retail model.</li>
-      <li>Adds a database consistency repair for business industry profiles and validates 111 migrations, 140 public tables, 140 RLS-enabled tables and 193 policies.</li>
+      <li>Adds a database consistency repair for business industry profiles; the later policy-parity repair brings the canonical/production history to 112 migrations, 140 public tables, 140 RLS-enabled tables and 193 policies.</li>
       <li>Repairs desktop startup by selecting an available local port, waiting for the embedded application server and retaining diagnostic logs instead of opening a blank window.</li>
       <li>Preserves production/staging cache isolation and the purchase paid/due consistency controls introduced in r3.</li>
       <li>Rebuilds macOS, Windows installer and portable ZIP, Linux AppImage and deb, Android arm64 APK, and the merchant/storefront web export from the same verified source.</li>
@@ -34,7 +34,7 @@
       <li>Builds the merchant and customer storefront web export locally at 3,694 modules.</li>
     </ul>
     <h2>Verification posture</h2>
-    <p>The release passes TypeScript, quality, industry-registry, purchase-consistency, migration-safety and vertical contract checks plus database, tenant, commerce, B2B, payment, GST, automation, reporting/export, printing and desktop-security regressions. The dedicated staging database replays all 111 migrations, keeps all 140 public tables under RLS, has no missing policy-backed grants and passes rollback-safe tenant, retail and specialised-engine journeys. The live 31-business-type matrix verifies setup and exact inventory, CRM and point-of-sale terminology. A staging retail lifecycle covered sale, GST, stock, journals, supplier purchase, goods receipt, payment and return/refund evidence.</p>
+    <p>The release passes TypeScript, quality, industry-registry, purchase-consistency, migration-safety and vertical contract checks plus database, tenant, commerce, B2B, payment, GST, automation, reporting/export, printing and desktop-security regressions. The dedicated staging database now replays all 112 migrations, keeps all 140 public tables under RLS, has no missing policy-backed grants and passes rollback-safe tenant, retail and specialised-engine journeys. The live 31-business-type matrix verifies setup and exact inventory, CRM and point-of-sale terminology. A staging retail lifecycle covered sale, GST, stock, journals, supplier purchase, goods receipt, payment and return/refund evidence.</p>
     <h2 id="delivery">Package status</h2>
     <div class="legal-notice">The published download set contains an ad-hoc-signed macOS ZIP, unsigned Windows NSIS installer and portable ZIP, Linux AppImage and deb, internal/debug-signed Android arm64 APK, and static web export. Commercial publisher signing, Apple notarization, Windows Authenticode, Android production signing/AAB, physical printer/scanner testing, provider credentials and statutory authorization remain external gates.</div>
     <h2>Version and checksums</h2>

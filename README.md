@@ -2,6 +2,8 @@
 
 Static company and product website for the public Artha Business Suite v1.0.9 package revision r4 evaluation release.
 
+The canonical source and controlled production database may advance independently. As of 7 November 2026, the public downloads intentionally remain r4 while a newer internal preflight awaits trusted signing and clean-machine acceptance.
+
 - The website presents the Artha product scope and release posture without publishing private company records.
 - `platform.html` is the public overview of the Artha platform and its connected business capabilities.
 - Product recordings and screenshots use synthetic demonstration data.

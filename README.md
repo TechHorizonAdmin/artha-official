@@ -2,6 +2,8 @@
 
 Static company and product website for the public Artha Business Suite v1.0.9 package revision r4 evaluation release.
 
+Artha Business Suite is a product of ARTHA BUSINESS TECHNOLOGIES PRIVATE LIMITED, incorporated in India on 12 November 2026 (CIN U58202AP2026PTC129404). Public legal pages were refreshed on 12 November 2026; paid customer terms and operational registration claims remain gated pending professional approval and evidence.
+
 The canonical source and controlled production database may advance independently. As of 7 November 2026, the public downloads intentionally remain r4 while a newer internal preflight awaits trusted signing and clean-machine acceptance.
 
 - The website presents the Artha product scope and release posture without publishing private company records.
